@@ -1,6 +1,60 @@
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
 
 export const AddContact = () => {
+    const [newContact, setNewContact] = useState('');
+    const [holdContact, setHoldContact] = useState([]);
+
+
+const createContact = async () => {
+    try {
+        const response = fetch ("https://playground.4geeks.com/contact/agendas/Jesus/contacts",{
+            method:"POST",
+            headers:{" Content-type":"application.json"},
+            
+        })
+    } catch (error) {
+        
+    }
+}
+
+    const getAllContactUser = async () => {
+        try {
+            const response = await fetch("https://playground.4geeks.com/contact/agendas/Jesus/contacts");
+            const data = response.json();
+            if (response.ok) {
+                setHoldContact(data.todos);
+            } else if(response.status === 404){
+                createContactUser();
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+  
+
+    const createContactUser = async () => {
+        try {
+            const response = await fetch("https://playground.4geeks.com/contact/agendas/Jesus/contacts", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" }
+            });
+            if (response.ok) {
+                getAllContactUser();
+            }
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+  useEffect(()=>{
+        const init = async () =>{
+            await getAllContactUser();
+        };
+        init();
+    }, []);
     return (
         <>
             <form className="container">
@@ -69,7 +123,7 @@ export const AddContact = () => {
                 </div>
                 <div>
                     <Link to="/Card">
-                    or get back to contacts
+                        or get back to contacts
                     </Link>
                 </div>
             </form>

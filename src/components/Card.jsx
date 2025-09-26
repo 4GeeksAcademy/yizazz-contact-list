@@ -13,22 +13,22 @@ export const Card = () => {
                                     Mike Anamendolia
                                 </div>
                                 <div className="location-logo pt-2">
-                                    <i id="location" class="fa-solid fa-location-dot"></i>
+                                    <i id="location" className="fa-solid fa-location-dot"></i>
                                     <div className="location">Ubicación</div>
                                 </div>
                                 <div className="phone-logo mt-1">
-                                    <i id="phone" class="fa-solid fa-phone-flip"></i><div className="phone">Telefono</div>
+                                    <i id="phone" className="fa-solid fa-phone-flip"></i><div className="phone">Telefono</div>
                                 </div>
                                 <div className="email-logo mt-1">
-                                    <i id="email" class="fa-solid fa-envelope"></i><div className="email">Email</div>
+                                    <i id="email" className="fa-solid fa-envelope"></i><div className="email">Email</div>
                                 </div>
                             </div>
                             <div id="logos-card" className="">
                                 <div id="logo-1" className=" me-4 mt-2">
-                                   <button id="pencil-button"><i id="pencil" class="fa-solid fa-pencil"></i></button>
+                                   <button id="pencil-button"><i id="pencil" className="fa-solid fa-pencil"></i></button>
                                 </div>
                                 <div id="logo-2" className="me-3 mt-2">
-                                    <button id="trash-button"><i id="trash" class="fa-solid fa-trash-can"></i></button>
+                                    <button id="trash-button"><i id="trash" className="fa-solid fa-trash-can"></i></button>
                                 </div>
                             </div>
 
