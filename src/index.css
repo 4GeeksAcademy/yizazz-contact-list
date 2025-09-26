@@ -1,0 +1,36 @@
+#img-card {
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: fit-content;
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+#container-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    padding: 0;
+}
+
+#info-card {
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+
+}
+
+#logos-card {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    
+}
+
+
+
+
