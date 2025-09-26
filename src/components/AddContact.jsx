@@ -68,7 +68,7 @@ export const AddContact = () => {
                     </div>
                 </div>
                 <div>
-                    <Link to="./Card">
+                    <Link to="/Card">
                     or get back to contacts
                     </Link>
                 </div>
