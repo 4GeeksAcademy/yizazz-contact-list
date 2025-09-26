@@ -1,8 +1,7 @@
 #img-card {
     border-radius: 50%;
-    border: 1px solid grey;
-    width: fit-content;
-    height: 100%;
+    border: 1px solid rgb(228, 219, 219);
+    height: 85%;
     aspect-ratio: 1/1;
     margin: 1rem;
     margin-left: 3rem;
@@ -10,6 +9,7 @@
 }
 
 #container-card {
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,20 +17,89 @@
     padding: 0;
 }
 
+#pencil-button {
+    background-color: white;
+    border: none;
+}
+
+#trash-button {
+    background-color: white;
+    border: none;
+}
+
 #info-card {
     height: 100%;
     width: 100%;
     flex-grow: 1;
-
 }
 
 #logos-card {
     display: flex;
     width: 20%;
     height: 100%;
-    
+
 }
 
+#email {
+    font-size: 20px;
+    color: grey;
+}
 
+#location {
+    font-size: 25px;
+    color: grey;
+}
 
+#phone {
+    font-size: 20px;
+    color: grey;
+}
 
+.location-logo {
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+.name {
+    padding: none;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.location {
+    font-size: 1.5rem;
+    padding-left: 8px;
+}
+
+.phone-logo {
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+#pencil {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+#trash {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.phone {
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.email {
+    font-size: 1rem;
+    padding-left: 25px;
+    color: grey;
+}
+
+.email-logo {
+    display: flex;
+    align-items: center;
+}
