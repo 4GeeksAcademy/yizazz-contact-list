@@ -77,6 +77,12 @@ export const AddContact = () => {
                 className="container"
                 onSubmit={async (event) => {
                     event.preventDefault();
+
+                    if (!newContact.name || !newContact.email || !newContact.phone || !newContact.address) {
+                        alert("Debes llenar todos los campos");
+                        return;
+                    }
+
                     let success = false;
                     if (editingContact) {
                         success = await editContact();
