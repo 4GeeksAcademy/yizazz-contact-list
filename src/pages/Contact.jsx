@@ -41,17 +41,17 @@ export const Contact = () => {
             if (response.ok) {
                 setHoldContact(data.contacts);
             } else if (response.status === 404) {
-                createContactUser();
+                createAgenda();
             }
         } catch (error) {
             console.log(error);
         }
     };
 
-    const createContactUser = async () => {
+    const createAgenda = async () => {
         try {
             const response = await fetch(
-                "https://playground.4geeks.com/contact/agendas/Jesus/contacts",
+                "https://playground.4geeks.com/contact/agendas/Jesus",
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
